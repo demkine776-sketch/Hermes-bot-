@@ -1,7 +1,3 @@
 #!/bin/bash
-pip install .
-hermes config set provider $AI_PROVIDER
-hermes config set api_key $AI_API_KEY
-hermes config set telegram.token $TELEGRAM_BOT_TOKEN
-hermes config set telegram.allowed_users $TELEGRAM_ALLOWED_USERS
-exec python3 -m hermes gateway run --platform telegram
+export PYTHONPATH=$PYTHONPATH:.
+python3 -m hermes gateway run --platform telegram

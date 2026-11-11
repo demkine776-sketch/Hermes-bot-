@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+google-genai
+PyGithub
+duckduckgo-search
+flask
+requests

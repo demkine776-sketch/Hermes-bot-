@@ -142,9 +142,9 @@ chat_sessions = {}
 def get_chat(user_id):
     if user_id not in chat_sessions:
         chat_sessions[user_id] = ai_client.chats.create(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
+               system_instruction=SYSTEM_PROMPT,
                 tools=TOOLS,
                 temperature=0.4
             )
